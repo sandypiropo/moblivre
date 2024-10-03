@@ -1,4 +1,3 @@
-//         emailjs.send('service_gvc2hwm', 'template_q1n4euq', templateParams, 'YOUR_USER_ID') // Substitua 'YOUR_USER_ID' pelo seu User ID
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css';

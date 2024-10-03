@@ -1,27 +1,25 @@
-/* App.css */
 .container {
-  padding: 30px; /* Mais espaço interno para um visual mais arejado */
-  border-radius: 10px; /* Aumentado para um visual mais suave */
-  box-shadow: 0 4px 20px rgba(75, 74, 74, 0.5); /* Sombra mais suave */
-  background-color: #1d1d2e; /* Mantém o fundo */
-  margin: 20px; /* Adiciona margem para evitar que toque nas bordas */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(75, 74, 74, 0.5);
+  background-color: #1d1d2e;
+  margin: 20px;
 }
 
 .title {
-  color: #f5f5f5; /* Cor do título */
-  font-size: 28px; /* Tamanho do título aumentado */
-  text-align: center; /* Centraliza o texto */
-  margin-bottom: 20px; /* Espaço abaixo do título */
+  color: #f5f5f5;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .success-message {
-  color: #4caf50; /* Estilo para mensagem de sucesso */
-  text-align: center; /* Centraliza a mensagem */
-  margin-top: 15px; /* Espaço acima da mensagem */
-  font-weight: bold; /* Destaca a mensagem */
+  color: #4caf50;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
 }
 
-/* Estilos para o formulário */
 form {
   display: flex;
   flex-direction: column;
@@ -32,65 +30,79 @@ form label {
   color: #f5f5f5;
   font-size: 17px;
   margin-bottom: 4px;
-  text-align: left; /* Alinhado à esquerda */
+  text-align: left;
 }
 
 form input,
 form textarea {
   padding: 15px;
   outline: none;
-  border: 1px solid #4caf50; /* Borda verde clara */
-  border-radius: 8px; /* Bordas arredondadas */
+  border: 1px solid #4caf50;
+  border-radius: 8px;
   margin-bottom: 20px;
-  font-size: 15px;
-  transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+  font-size: 18px;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 form input:focus,
 form textarea:focus {
-  border-color: #76ff03; /* Verde mais claro ao focar */
-  box-shadow: 0 0 5px rgba(118, 255, 3, 0.5); /* Sombra ao focar */
+  border-color: #76ff03;
+  box-shadow: 0 0 5px rgba(118, 255, 3, 0.5);
 }
 
 form button {
   padding: 15px;
   cursor: pointer;
   font-size: 16px;
-  background: #4caf50; /* Botão verde */
-  color: #f5f5f5; /* Cor do texto */
-  border: none; /* Remove a borda */
-  border-radius: 8px; /* Bordas arredondadas */
-  transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+  background: #4caf50;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 form button:hover {
-  background: #76ff03; /* Verde mais claro ao passar o mouse */
-  transform: translateY(-2px); /* Eleva o botão um pouco ao passar o mouse */
+  background: #76ff03;
+  transform: translateY(-2px);
 }
-
 
 .credit {
-    color: #f5f5f5; /* Cor do texto */
-    text-align: center; /* Centraliza a mensagem */
-    margin-top: 20px; /* Espaço acima da mensagem */
-    font-size: 14px; /* Tamanho da fonte */
-    width: 100%; /* Ocupa toda a largura disponível */
+  color: #f5f5f5;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  width: 100%;
 }
 
-/* Estilos para o formulário */
-form {
-display: flex;
-flex-direction: column;
-width: 100%;
+input[type="file"] {
+  padding: 15px;
+  outline: none;
+  border: 1px solid #4caf50;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: #1d1d2e;
+  color: #f5f5f5;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-form input,
-form textarea {
-padding: 15px;
-outline: none;
-border: 1px solid #4caf50;
-border-radius: 8px;
-margin-bottom: 20px;
-font-size: 18px; /* Aumentar o tamanho da fonte dos inputs */
-transition: border-color 0.3s, box-shadow 0.3s;
+input[type="file"]:focus {
+  border-color: #76ff03;
+  box-shadow: 0 0 5px rgba(118, 255, 3, 0.5);
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  background: #4caf50;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background: #76ff03;
+  transform: translateY(-2px);
 }
