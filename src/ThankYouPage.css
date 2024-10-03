@@ -7,10 +7,11 @@
     width: 800px; /* Largura do container */
     margin: 0 auto; /* Centraliza o container na página */
     margin-bottom: 20px; /* Espaço abaixo do container */
-    background: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    background: rgba(29, 29, 46, 0.9); /* Fundo escuro semi-transparente */
     border-radius: 10px; /* Bordas arredondadas */
     color: #f5f5f5; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
 }
 
 .text {
@@ -32,9 +33,16 @@
     text-decoration: none; /* Remove o sublinhado */
     font-size: 16px; /* Tamanho da fonte do botão */
     transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+    cursor: pointer; /* Indica que é clicável */
 }
 
 .btn:hover {
     background-color: #76ff03; /* Verde mais claro ao passar o mouse */
     transform: translateY(-2px); /* Eleva o botão um pouco ao passar o mouse */
+}
+
+.credit {
+    color: #f5f5f5; /* Cor do texto do crédito */
+    margin-top: 20px; /* Espaço acima do crédito */
+    font-size: 14px; /* Tamanho da fonte do crédito */
 }
