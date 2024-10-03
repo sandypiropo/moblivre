@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
+import Footer from './Footer'
 import emailjs from 'emailjs-com';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [imageUrl, setImageUrl] = useState('');
+    const [address, setAddress] = useState(''); // Novo estado para o endereço
     const [success, setSuccess] = useState(false);
     const navigate = useNavigate();
 
@@ -22,7 +24,7 @@ function App() {
 
         const formData = new FormData();
         formData.append('file', file);
-        formData.append('upload_preset', 'salvadores'); // Altere para seu upload preset correto
+        formData.append('upload_preset', 'salvadores');
 
         try {
             const response = await fetch(`https://api.cloudinary.com/v1_1/dxdtygjnc/image/upload`, {
@@ -30,7 +32,6 @@ function App() {
                 body: formData
             });
 
-            // Verificando a resposta da API
             if (!response.ok) {
                 const errorData = await response.json();
                 console.error('Resposta de erro do Cloudinary:', errorData);
@@ -55,7 +56,7 @@ function App() {
         event.preventDefault();
 
         // Verifica se todos os campos estão preenchidos
-        if (!name.trim() || !email.trim() || !message.trim() || !imageUrl.trim()) {
+        if (!name.trim() || !email.trim() || !message.trim() || !imageUrl.trim() || !address.trim()) {
             alert("Preencha todos os campos, incluindo a imagem.");
             return;
         }
@@ -64,13 +65,14 @@ function App() {
             name: name,
             email: email,
             message: message,
-            imageUrl: imageUrl
+            imageUrl: imageUrl,
+            address: address // Adiciona o endereço aos parâmetros do template
         };
 
         emailjs.send('service_gvc2hwm', 'template_gk8gpe5', templateParams, 'zgMjn0TwQAXcc12WI')
             .then((response) => {
                 console.log('Email enviado com sucesso!', response.status, response.text);
-                setSuccess(true); // Define success como true
+                setSuccess(true);
             })
             .catch((err) => {
                 console.error('Erro ao enviar o email:', err);
@@ -89,6 +91,7 @@ function App() {
         setEmail('');
         setMessage('');
         setImageUrl('');
+        setAddress(''); // Limpa o campo de endereço
     };
 
     return (
@@ -117,6 +120,14 @@ function App() {
                         onChange={(e) => setEmail(e.target.value)}
                         value={email}
                     />
+                    
+                    <input 
+                        className="input"
+                        type="text"
+                        placeholder="Digite o endereço do local relatado" // Novo campo de endereço
+                        onChange={(e) => setAddress(e.target.value)}
+                        value={address}
+                    />
 
                     <textarea 
                         className="textarea"
@@ -137,6 +148,8 @@ function App() {
             </div>
 
             <p className="credit">Desenvolvido por: Riquelme dos Santos Pimentel Carvalho Silva RU:4848809</p>
+
+            <Footer /> 
         </section>
     );
 }

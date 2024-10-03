@@ -1,0 +1,17 @@
+/* Footer.css */
+.footer {
+    padding: 20px; /* Espaço interno */
+    background-color: #1d1d2e; /* Cor de fundo */
+    color: #f5f5f5; /* Cor do texto */
+    margin-top: 20px; /* Margem superior para separar do container */
+    text-align: center; /* Centraliza o texto */
+    border-top: 1px solid #4caf50; /* Linha acima do rodapé */
+}
+
+.footer p {
+    margin: 10px 0; /* Margem para espaçar os parágrafos */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    max-width: 800px; /* Largura máxima para melhor legibilidade */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza o conteúdo dentro do rodapé */
+}
