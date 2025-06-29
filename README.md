@@ -55,15 +55,4 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Contato</h2>
-    <p><strong>Relate agora:</strong></p>
-    <ul>
-      <li>Digite seu <strong>nome</strong></li>
-      <li>Digite seu <strong>e-mail</strong></li>
-      <li>Informe o <strong>endereço</strong> do local afetado</li>
-      <li>Escreva sua <strong>mensagem</strong></li>
-      <li><strong>Anexe imagens</strong> (opcional)</li>
-    </ul>
-  </section>
 
