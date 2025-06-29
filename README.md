@@ -1,72 +1,69 @@
-# ACCESS THE PROJECT https://projetosalvadoresssa.netlify.app/thank-you
+ <h1>🌱 Projeto Salvadores</h1>
 
-# Getting Started with Create React App
+  <section>
+    <h2>Apresentação</h2>
+    <p>O <strong>Projeto Salvadores</strong> é uma iniciativa cidadã que busca impactar positivamente a cidade de <strong>Salvador - BA</strong> por meio da denúncia colaborativa da presença de lixo e entulho nas ruas. A plataforma foi idealizada para que moradores possam relatar rapidamente problemas relacionados ao acúmulo de resíduos em vias públicas, anexando fotos e fornecendo informações sobre o local afetado.</p>
+    <p>O projeto visa fortalecer a comunicação entre a população e o poder público, promovendo mais eficiência na gestão dos resíduos sólidos urbanos.</p>
+  </section>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/user-attachments/assets/e21cb9a5-3cdc-4d47-8f95-52e446ef675f)
 
-## Available Scripts
+  <section>
+    <h2>Justificativa</h2>
+    <p>A cidade de Salvador enfrenta diversos desafios em relação à limpeza urbana e descarte adequado de resíduos. A presença constante de entulhos, lixo doméstico e materiais descartados indevidamente afeta a qualidade de vida da população, contribui para a proliferação de doenças e degrada o meio ambiente.</p>
+    <p>Diante desse cenário, o Projeto Salvadores surge como uma resposta cidadã, buscando ampliar a <strong>voz da comunidade</strong> na identificação e solução desses problemas. Acreditamos que cidadania ativa e tecnologia são ferramentas fundamentais para transformar a realidade urbana.</p>
+  </section>
 
-In the project directory, you can run:
+  <section>
+    <h2>Metodologia</h2>
+    <ul>
+      <li>Formulário de relato com nome, e-mail e endereço.</li>
+      <li>Campo para descrever a situação encontrada.</li>
+      <li>Upload de imagens como prova do problema.</li>
+      <li>Envio das informações para posterior análise e encaminhamento às autoridades.</li>
+    </ul>
+  </section>
 
-### `npm start`
+  <section>
+    <h2>Objetivo</h2>
+    <ul>
+      <li>Facilitar o relato de focos de lixo e entulho nas ruas de Salvador.</li>
+      <li>Promover a participação ativa da comunidade na melhoria do espaço urbano.</li>
+      <li>Conscientizar sobre descarte correto e responsabilidade coletiva.</li>
+      <li>Contribuir com dados úteis para uma gestão pública mais eficiente e transparente.</li>
+    </ul>
+  </section>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <section>
+    <h2>Recursos</h2>
+    <ul>
+      <li>Site responsivo com formulário de envio.</li>
+      <li>Integração para upload de imagens.</li>
+      <li>Banco de dados com registros de relatos.</li>
+      <li>Divulgação nas redes sociais e canais comunitários.</li>
+      <li>Apoio de voluntários e instituições locais.</li>
+    </ul>
+  </section>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <section>
+    <h2>Resultados Esperados</h2>
+    <ul>
+      <li>Aumento de denúncias de locais com lixo acumulado.</li>
+      <li>Redução de pontos crônicos de descarte irregular.</li>
+      <li>Maior conscientização sobre limpeza e saúde urbana.</li>
+      <li>Fortalecimento da relação entre o cidadão e o poder público.</li>
+    </ul>
+  </section>
 
-### `npm test`
+  <section>
+    <h2>Contato</h2>
+    <p><strong>Relate agora:</strong></p>
+    <ul>
+      <li>Digite seu <strong>nome</strong></li>
+      <li>Digite seu <strong>e-mail</strong></li>
+      <li>Informe o <strong>endereço</strong> do local afetado</li>
+      <li>Escreva sua <strong>mensagem</strong></li>
+      <li><strong>Anexe imagens</strong> (opcional)</li>
+    </ul>
+  </section>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
