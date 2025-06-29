@@ -6,7 +6,7 @@
     <p>O projeto visa fortalecer a comunicação entre a população e o poder público, promovendo mais eficiência na gestão dos resíduos sólidos urbanos.</p>
   </section>
 
-![image](https://github.com/user-attachments/assets/e21cb9a5-3cdc-4d47-8f95-52e446ef675f)
+![image](https://github.com/user-attachments/assets/ca2105e2-8e83-47a5-9542-6078575ff814)
 
   <section>
     <h2>Justificativa</h2>
