@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import './App.css';
 import Footer from './Footer'
 import emailjs from 'emailjs-com';
+import background from './background.jpg';
+
 
 function App() {
     const [name, setName] = useState('');
@@ -24,10 +26,10 @@ function App() {
 
         const formData = new FormData();
         formData.append('file', file);
-        formData.append('upload_preset', 'salvadores');
+        formData.append('upload_preset', 'moblivre');
 
         try {
-            const response = await fetch(`https://api.cloudinary.com/v1_1/dxdtygjnc/image/upload`, {
+            const response = await fetch(`https://api.cloudinary.com/v1_1/dnbrq7qvo/image/upload`, {
                 method: 'POST',
                 body: formData
             });
@@ -55,7 +57,6 @@ function App() {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        // Verifica se todos os campos estão preenchidos
         if (!name.trim() || !email.trim() || !message.trim() || !imageUrl.trim() || !address.trim()) {
             alert("Preencha todos os campos, incluindo a imagem.");
             return;
@@ -64,27 +65,34 @@ function App() {
         const templateParams = {
             name: name,
             email: email,
+            address: address,
             message: message,
-            imageUrl: imageUrl,
-            address: address // Adiciona o endereço aos parâmetros do template
+            imageUrl: imageUrl
         };
 
-        emailjs.send('service_gvc2hwm', 'template_gk8gpe5', templateParams, 'zgMjn0TwQAXcc12WI')
+
+        emailjs.send(
+            'service_qr25ygs',
+            'template_a2cp05n',
+            templateParams,
+            'dS3uD5ibw4sM9lpsG'
+        )
             .then((response) => {
                 console.log('Email enviado com sucesso!', response.status, response.text);
-                setSuccess(true);
+                setSuccess(true); // Mostra mensagem de sucesso na tela
             })
             .catch((err) => {
                 console.error('Erro ao enviar o email:', err);
                 alert('Falha ao enviar o email: ' + (err.text || err.message || 'Erro desconhecido'));
             })
             .finally(() => {
-                clearFields();
+                clearFields(); // Limpa o formulário
                 setTimeout(() => {
-                    navigate('/thank-you');
+                    navigate('/thank-you'); // Redireciona após 2s
                 }, 2000);
             });
     };
+
 
     const clearFields = () => {
         setName('');
@@ -95,62 +103,72 @@ function App() {
     };
 
     return (
-        <section>
-            <h2>PROJETO SALVADORES</h2>
-            <p>RELATE A PRESENÇA DE LIXO E ENTULHO NAS RUAS DE SALVADOR-BA E ANEXE FOTOS!</p>
+        <section className="main-section" style={{
+            backgroundImage: `linear-gradient(rgba(24, 24, 24, 0.54), rgba(92, 92, 92, 0.73)), url(${background})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            height: '100vh',
+            width: '100%',
+        }}>
+            <div className="left-side">
+                <h2 className="subtitle">Juntos por uma cidade mais acessível e conectada!</h2>
+                <p>Relate a presença de obstáculos e problemas de mobilidade em Salvador-BA.</p>
+                <Footer />
+            </div>
 
-            <div className="container">
-                <h2 className="title">Contato</h2>
+            <div className="right-side container">
+                {/* Logo dentro do formulário */}
+                <img src="/logoium.png" alt="Moblivre Logo" className="form-logo" />
 
                 {success && <p className="success-message">Obrigado! Sua mensagem foi enviada com sucesso.</p>}
 
                 <form className="form" onSubmit={handleSubmit}>
-                    <input 
+                    <input
                         className="input"
                         type="text"
                         placeholder="Digite seu nome"
                         onChange={(e) => setName(e.target.value)}
                         value={name}
+                        style={{ flex: 1 }}
                     />
-                    
-                    <input 
+
+                    <input
                         className="input"
                         type="email"
                         placeholder="Digite seu email"
                         onChange={(e) => setEmail(e.target.value)}
                         value={email}
                     />
-                    
-                    <input 
+                    <input
                         className="input"
                         type="text"
-                        placeholder="Digite o endereço do local relatado" // Novo campo de endereço
+                        placeholder="Digite o endereço do local relatado"
                         onChange={(e) => setAddress(e.target.value)}
                         value={address}
                     />
-
-                    <textarea 
+                    <textarea
                         className="textarea"
-                        placeholder="Digite sua mensagem..."
+                        placeholder="Descreva o relato..."
                         onChange={(e) => setMessage(e.target.value)}
                         value={message}
                     />
-
-                    <input 
+                    <input
                         className="input"
                         type="file"
                         accept="image/*"
                         onChange={handleImageUpload}
                     />
-
                     <input className="button" type="submit" value="Enviar" />
                 </form>
+
+                <p className="credit">Desenvolvido por: Sandy Piropo<br></br>
+                    Negócio e Design: Edenilson Oliveira e Priscila Simas</p>
             </div>
 
-            <p className="credit">Desenvolvido por: Riquelme dos Santos Pimentel Carvalho Silva RU:4848809</p>
-
-            <Footer /> 
         </section>
+
+
     );
 }
 
