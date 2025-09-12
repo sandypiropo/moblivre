@@ -36,6 +36,8 @@ O projeto beneficia também **idosos, gestantes, crianças, pessoas com mobilida
 - **React Router (`useNavigate`)**: redirecionamento após envio do formulário.  
 - **CSS moderno**: layout em duas colunas, background com gradiente, campos estilizados e responsivos.
 - <img width="1321" height="281" alt="exemplo" src="https://github.com/user-attachments/assets/e8640ee5-614c-4146-ba68-00d1181db25f" />
+- <img width="394" height="343" alt="image" src="https://github.com/user-attachments/assets/9d16035e-9d59-4d05-9dea-bd7ed340f8b3" />
+
 Exemplo de imagem: 
 ![falta-de-acessibilidade-na-cidade](https://github.com/user-attachments/assets/b39f2bac-fbfe-4a0d-8615-21afd6e131dc)
 
