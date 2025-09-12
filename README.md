@@ -1,7 +1,7 @@
 
 # <img width="585" height="129" alt="logoium" src="https://github.com/user-attachments/assets/79f683b0-5fc4-4c98-9a37-8a1abae7facc" />
 
-## 🌐 [ACESSE NOSSO PROJETO](https://moblivre.vercel.app)
+## 🌐 [ACESSE NOSSO MVP](https://moblivre.vercel.app)
 
 **Projeto de Hackathon**  
 **Equipe:** Edenilson Oliveira, Priscila Simas e Sandy Piropo  
