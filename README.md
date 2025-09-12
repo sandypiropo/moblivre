@@ -1,58 +1,80 @@
- <h1>🌱 Projeto Salvadores</h1>
 
-  <section>
-    <h2>Apresentação</h2>
-    <p>O <strong>Projeto Salvadores</strong> é uma iniciativa cidadã que busca impactar positivamente a cidade de <strong>Salvador - BA</strong> por meio da denúncia colaborativa da presença de lixo e entulho nas ruas. A plataforma foi idealizada para que moradores possam relatar rapidamente problemas relacionados ao acúmulo de resíduos em vias públicas, anexando fotos e fornecendo informações sobre o local afetado.</p>
-    <p>O projeto visa fortalecer a comunicação entre a população e o poder público, promovendo mais eficiência na gestão dos resíduos sólidos urbanos.</p>
-  </section>
-
-![image](https://github.com/user-attachments/assets/ca2105e2-8e83-47a5-9542-6078575ff814)
-
-  <section>
-    <h2>Justificativa</h2>
-    <p>A cidade de Salvador enfrenta diversos desafios em relação à limpeza urbana e descarte adequado de resíduos. A presença constante de entulhos, lixo doméstico e materiais descartados indevidamente afeta a qualidade de vida da população, contribui para a proliferação de doenças e degrada o meio ambiente.</p>
-    <p>Diante desse cenário, o Projeto Salvadores surge como uma resposta cidadã, buscando ampliar a <strong>voz da comunidade</strong> na identificação e solução desses problemas. Acreditamos que cidadania ativa e tecnologia são ferramentas fundamentais para transformar a realidade urbana.</p>
-  </section>
-
-  <section>
-    <h2>Metodologia</h2>
-    <ul>
-      <li>Formulário de relato com nome, e-mail e endereço.</li>
-      <li>Campo para descrever a situação encontrada.</li>
-      <li>Upload de imagens como prova do problema.</li>
-      <li>Envio das informações para posterior análise e encaminhamento às autoridades.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Objetivo</h2>
-    <ul>
-      <li>Facilitar o relato de focos de lixo e entulho nas ruas de Salvador.</li>
-      <li>Promover a participação ativa da comunidade na melhoria do espaço urbano.</li>
-      <li>Conscientizar sobre descarte correto e responsabilidade coletiva.</li>
-      <li>Contribuir com dados úteis para uma gestão pública mais eficiente e transparente.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Recursos</h2>
-    <ul>
-      <li>Site responsivo com formulário de envio.</li>
-      <li>Integração para upload de imagens.</li>
-      <li>Banco de dados com registros de relatos.</li>
-      <li>Divulgação nas redes sociais e canais comunitários.</li>
-      <li>Apoio de voluntários e instituições locais.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Resultados Esperados</h2>
-    <ul>
-      <li>Aumento de denúncias de locais com lixo acumulado.</li>
-      <li>Redução de pontos crônicos de descarte irregular.</li>
-      <li>Maior conscientização sobre limpeza e saúde urbana.</li>
-      <li>Fortalecimento da relação entre o cidadão e o poder público.</li>
-    </ul>
-  </section>
+# <img width="585" height="129" alt="logoium" src="https://github.com/user-attachments/assets/79f683b0-5fc4-4c98-9a37-8a1abae7facc" />
 
 
+**Projeto de Hackathon**  
+**Equipe:** Edenilson Oliveira, Priscila Simas e Sandy Piropo  
+
+---
+
+## Resumo
+O **MOBLIVRE** é uma iniciativa para **melhorar a acessibilidade urbana em Salvador**, especialmente para pessoas com deficiência (PCDs). A plataforma permite que cidadãos reportem obstáculos urbanos, como calçadas inadequadas, falta de rampas e ausência de piso tátil, de forma **rápida e prática**, utilizando **fotos, descrição e endereço do local**.
+
+<img width="1297" height="632" alt="imggg" src="https://github.com/user-attachments/assets/461bc8ab-9218-4667-b2cc-6cdad2cd74bd" />
+
+
+As denúncias são armazenadas em um banco de dados e podem ser utilizadas para gerar **relatórios de prioridade**, aumentar a **visibilidade do problema** e pressionar o poder público por melhorias.
+
+O projeto beneficia também **idosos, gestantes, crianças, pessoas com mobilidade temporária reduzida** e outros grupos que dependem de ambientes acessíveis.
+
+---
+
+## Funcionalidades Principais
+- **Formulário interativo:** coleta nome, email, endereço do local, descrição do relato e imagem do obstáculo.  
+- **Upload de imagens:** integração com **Cloudinary** para armazenar fotos de forma segura e gerar URLs públicas.  
+- **Envio de email automatizado:** utiliza **EmailJS** para enviar as denúncias diretamente para a equipe ou autoridades.  
+- **Feedback ao usuário:** mensagem de confirmação após envio bem-sucedido.  
+- **Classificação de dados:** permite futura análise de risco e priorização das denúncias.  
+- **Design responsivo:** layout em duas colunas com background esmaecido, adequado para desktops e dispositivos móveis.  
+
+---
+
+## Tecnologias Utilizadas
+- **ReactJS**: interface do usuário e gerenciamento de estado com `useState`.  
+- **EmailJS**: envio de emails sem backend próprio.  
+- **Cloudinary**: upload e armazenamento de imagens.  
+- **React Router (`useNavigate`)**: redirecionamento após envio do formulário.  
+- **CSS moderno**: layout em duas colunas, background com gradiente, campos estilizados e responsivos.
+- <img width="1321" height="281" alt="exemplo" src="https://github.com/user-attachments/assets/e8640ee5-614c-4146-ba68-00d1181db25f" />
+- <img width="394" height="343" alt="image" src="https://github.com/user-attachments/assets/9d16035e-9d59-4d05-9dea-bd7ed340f8b3" />
+
+Exemplo de imagem: 
+![falta-de-acessibilidade-na-cidade](https://github.com/user-attachments/assets/b39f2bac-fbfe-4a0d-8615-21afd6e131dc)
+
+---
+
+## Como Funciona
+1. O usuário preenche todos os campos do formulário:
+   - Nome
+   - Email
+   - Endereço do local relatado
+   - Descrição do relato
+   - Foto do obstáculo
+2. Ao enviar o formulário:
+   - A imagem é enviada para o Cloudinary.
+   - A URL gerada é incluída nos parâmetros do email.
+   - EmailJS envia a denúncia para os destinatários definidos.
+3. Após envio, o usuário recebe uma mensagem de **confirmação** e é redirecionado para uma página de agradecimento.
+
+---
+
+## Diferenciais
+- **Coleta de endereço e foto:** permite georreferenciamento futuro e maior precisão nos relatos.  
+- **Sistema de feedback em tempo real:** o usuário sabe imediatamente que a denúncia foi enviada.  
+- **Pronto para análise de dados:** possibilita classificação de risco e priorização de intervenções.  
+- **Foco social e inclusivo:** atende PCDs, idosos, gestantes, crianças e qualquer pessoa que dependa de acessibilidade.  
+
+---
+
+## Estágio Atual
+- Protótipo funcional implementado em ReactJS.
+- Testes preliminares com usuários confirmam **usabilidade e relevância** da ferramenta.
+- Layout responsivo e formulário totalmente funcional, integrado com Cloudinary e EmailJS.
+
+---
+
+## Equipe
+- **Desenvolvimento e Frontend:** Sandy Piropo  
+- **Negócio e Design:** Edenilson Oliveira e Priscila Simas  
+
+---
